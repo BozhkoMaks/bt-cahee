@@ -1,0 +1,70 @@
+@mixin simple-text {
+  font-family: $font-text-light;
+  font-size: 17px;
+}
+
+@mixin titles {
+  font-size: 90px;
+  font-family: $font-title-bold;
+}
+
+@mixin buttons {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 55px;
+  box-shadow: 0px 0px 2px 2px gray;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  padding: 12px;
+  font-size: 20px;
+  font-family: $font-text-light;
+}
+
+@mixin buttons-hover {
+  text-decoration: none;
+  background: rgb(0, 0, 0);
+  color: rgba(255, 255, 255, 1);
+}
+
+@mixin media-buttons {
+  width: 150px;
+
+  font-size: 15px;
+}
+
+@mixin article__date {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  margin: 0;
+  color: rgba(255, 255, 255, 1);
+  font-family: $font-heavy;
+  width: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 32px;
+  text-align: center;
+  padding: 2px;
+  border-radius: 10px;
+  line-height: 35px;
+}
+
+@mixin article__title {
+  font-family: $font-title-bold;
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  margin: 0 20px;
+}
+
+@mixin article__author {
+  position: absolute;
+  color: rgba(255, 255, 255, 1);
+  font-family: $font-text-light;
+  font-size: 13px;
+  bottom: 0;
+  left: 0;
+  margin: 10px 20px;
+}
