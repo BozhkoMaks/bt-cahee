@@ -690,6 +690,19 @@ main {
 
 @media screen and (max-width: 576px) {
   main {
+    .gallery {
+      &__two-pic {
+        flex-direction: column;
+
+        &_image {
+          margin-bottom: 30px;
+          width: 100%;
+          &:nth-child(1) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
     .our-services__link {
       width: 250px;
     }
